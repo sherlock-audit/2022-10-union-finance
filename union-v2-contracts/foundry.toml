@@ -1,0 +1,14 @@
+[profile.default]
+out = 'out'
+src = 'contracts'
+test = 'test/foundry'
+libs = ["node_modules", "lib"]
+remappings = [
+  'ds-test=lib/ds-test/src/',
+  'forge-std=lib/forge-std/src/',
+  '@openzeppelin/contracts=node_modules/@openzeppelin/contracts',
+  '@openzeppelin/contracts-upgradeable=node_modules/@openzeppelin/contracts-upgradeable',
+  'union-v2-contracts=contracts'
+]
+
+# See more config options https://github.com/gakonst/foundry/tree/master/config
